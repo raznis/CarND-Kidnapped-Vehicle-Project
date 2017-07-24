@@ -114,6 +114,9 @@ public:
 	const bool initialized() const {
 		return is_initialized;
 	}
+
+	std::vector<LandmarkObs> transformObservations(Particle p, std::vector<LandmarkObs> observations);
+	std::vector<LandmarkObs> getRelevantLandmarks(Particle p, double range,  Map m);
 };
 
 
